@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.grid-container{
+    display: grid;
+    height: 1000px;
+    grid-template-areas: 'header header header '
+    ' menu main aside ' 
+    ' footer footer footer'
+    ;
+}
+
+
+.grid-container div{
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+}
+
+.item1{
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+nav ul li a{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 2rem;
+    padding: 0px 50px;
+    box-shadow: 3px 3px 5px 5px red;
+}
+
+nav ul li:hover{
+    background-color: brown;
+}
+
+
+.item1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-weight: bold;
+    padding: 40px 20px;
+}
+
+.item1 .imagen {
+    box-shadow: 3px 3px 5px 5px black;
+}
+
+
+.item1 h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(35, 35, 77);
+    text-decoration: underline;
+    margin: 20px;
+}
+
+
+
+
+
+.item2{
+    grid-area: menu;
+    background-color: rgb(115, 179, 13);
+}
+
+
+.item2 button{
+    margin: 20px;
+    box-shadow: 3px 4px 7px 7px red;
+}
+
+
+
+
+.item3{
+    grid-area: main;
+    background-color: rgb(115, 179, 13);
+}
+
+.item3 button{
+    margin: 20px;
+    box-shadow: 3px 4px 7px 7px red;
+}
+
+
+
+
+.item4{
+    grid-area: aside;
+    background-color: rgb(115, 179, 13);
+}
+
+.item4 button{
+    margin: 20px;
+    box-shadow: 3px 4px 7px 7px red;
+}
+
+
+.item5{
+    grid-area: footer;
+    background-color: cyan;
+}
+
+.item5 .imagen{
+    margin: 20px;
+    box-shadow: 2px 3px 5px 8px red;
+}
+
+
+.item5 footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    padding: 20px;
+}
